@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components </title>
+</head>
+
+<body class="w-full h-screen grid place-items-center">
+<div id="app">
+
+    <app-header >Components</app-header>
+    <app-button :is_loading="true">Logout</app-button>
+    <app-button>Login</app-button>
+
+</div>
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script type="module">
+
+    // import Card from "/js/components/card.js"
+
+    let app = Vue.createApp({
+        data() {
+            return {}
+        },
+        components: {
+            "app-button": {
+                template: `
+                  <button :class="
+                  {
+                      'm-2 px-4 py-2 rounded bg-red-300 hover:bg-red-200 disabled:cursor-not-allowed ',
+                       'bg-blue-600 hover:bg-blue-200':is_loading
+                  }"
+
+                      :disabled="is_loading">
+                    <slot/>
+                  </button>
+                `,
+                data() {
+                    return {
+                        processing: false
+                    }
+                },
+                props: {
+                    is_loading :{
+                        type :Boolean,
+                        default:false
+                    }
+                }
+            },
+            'app-header': {
+                props: {
+                    bgColor: {
+                        type: Boolean,
+                    }
+                },
+                template: `
+                  <h2 :class="{'p-2 my-1 rounded bg-green-300 mx-auto text-4xl text-red-400' : true}">
+                    <slot/>
+                  </h2>`
+            },
+
+
+        }
+    }).mount('#app')
+
+</script>
+
+</html>

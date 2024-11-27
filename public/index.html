@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en " class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body class="h-full grid place-items-center bg-red-100">
+    <div id="app">
+        <!-- <Card>hi</Card> -->
+        <!-- <h1>Hi</h1> -->
+        <test-btn></test-btn>
+
+    </div>
+</body>
+
+
+<script type="module">
+    import App from '../js/components/App.js';
+
+    const app = Vue.createApp(App);
+
+    app.mount('#app');
+</script>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</html>
