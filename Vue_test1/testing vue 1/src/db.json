@@ -1,0 +1,46 @@
+{
+  "test": [
+    {
+      "name": "aung",
+      "age": 33
+    }
+  ],
+  "test2": [
+    {
+      "name": "gg"
+    }
+  ],
+  "customers": [
+    {
+      "name": "Mr koko",
+      "id": "1",
+      "gender": "male"
+    },
+    {
+      "name": "Mr Tun",
+      "id": "2",
+      "gender": "male"
+    },
+    {
+      "name": "Mr Ka",
+      "id": "3",
+      "gender": "male"
+    },
+    {
+      "name": "Mr Ka",
+      "id": "3",
+      "gender": "male"
+    },
+    {
+      "name": "Mr Ka",
+      "id": "3",
+      "gender": "male"
+    },
+    {
+      "name": "Mr Ka",
+      "id": "3",
+      "gender": "male"
+    }
+
+  ]
+}

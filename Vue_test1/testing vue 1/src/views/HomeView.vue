@@ -3,6 +3,7 @@
     <Test :is_loading="isLoadingStatus">Login</Test>
     <button @click="isLoadingStatus = !isLoadingStatus">Change</button>
 
+
     <Card class="card"></Card>
 
     <!--  reuse function    -->
@@ -105,7 +106,7 @@ onMounted(() => {
 
 onUpdated(() => {
   titles.value =products.value.map(product => product.title);
-  console.log(titles.value)
+  // console.log(titles.value)
   // console.log(products.value.map(product => product.title));
 })
 
