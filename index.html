@@ -23,11 +23,12 @@
 </style>
 
 <body>
-    <div id="app">
-        <input type="text" v-model="greeting">
-        <h1>{{greeting}}</h1>
-        <button @click=" status = !status " :class="status ? 'red':'green'">Click</button>
-    </div>
+
+<div id="app">
+    <input type="text" v-model="greeting">
+    <h1>{{greeting}}</h1>
+    <button @click=" status = !status " :class="status ? 'red':'green'">Click</button>
+</div>
 </body>
 
 <script src=" https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -39,9 +40,7 @@
                 status: false
             }
         },
-        methods: {
-
-        },
+        methods: {},
         mounted() {
             setTimeout(() => {
                 this.greeting = 'change'

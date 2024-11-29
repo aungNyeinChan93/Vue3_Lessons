@@ -1,10 +1,11 @@
+
+
 <template>
 
-  <CustomerLists :userNames="userNames"/>
-
-  <p>{{data}}</p>
+  <CustomerLists :userNames="userNames" :customers="customers"/>
 
 </template>
+
 
 <script setup>
 import {getMethod} from "@/composiable/getMethod.js";

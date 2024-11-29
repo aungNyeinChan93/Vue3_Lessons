@@ -14,33 +14,43 @@
     {
       "name": "Mr koko",
       "id": "1",
-      "gender": "male"
+      "gender": "male",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam deleniti deserunt dolores expedita iure\nlaboriosam laborum molestias non perferendis praesentium, quaerat quod sequi, temporibus velit voluptatibus. Architecto,\nenim!"
+
     },
     {
       "name": "Mr Tun",
       "id": "2",
-      "gender": "male"
-    },
-    {
-      "name": "Mr Ka",
-      "id": "3",
-      "gender": "male"
-    },
-    {
-      "name": "Mr Ka",
-      "id": "3",
-      "gender": "male"
-    },
-    {
-      "name": "Mr Ka",
-      "id": "3",
-      "gender": "male"
-    },
-    {
-      "name": "Mr Ka",
-      "id": "3",
-      "gender": "male"
-    }
+      "gender": "male",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam deleniti deserunt dolores expedita iure\nlaboriosam laborum molestias non perferendis praesentium, quaerat quod sequi, temporibus velit voluptatibus. Architecto,\nenim!"
 
+    },
+    {
+      "name": "Mr Ka",
+      "id": "3",
+      "gender": "male",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam deleniti deserunt dolores expedita iure\nlaboriosam laborum molestias non perferendis praesentium, quaerat quod sequi, temporibus velit voluptatibus. Architecto,\nenim!"
+    },
+    {
+      "name": "Mr Ka",
+      "id": "3",
+      "gender": "male",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam deleniti deserunt dolores expedita iure\nlaboriosam laborum molestias non perferendis praesentium, quaerat quod sequi, temporibus velit voluptatibus. Architecto,\nenim!"
+    },
+    {
+      "name": "Mr Ka",
+      "id": "3",
+      "gender": "male",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam deleniti deserunt dolores expedita iure\nlaboriosam laborum molestias non perferendis praesentium, quaerat quod sequi, temporibus velit voluptatibus. Architecto,\nenim!"
+
+    },
+    {
+      "name": "Mr Ka",
+      "id": "3",
+      "gender": "male",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam deleniti deserunt dolores expedita iure\nlaboriosam laborum molestias non perferendis praesentium, quaerat quod sequi, temporibus velit voluptatibus. Architecto,\nenim!"
+
+    }
   ]
 }
+
