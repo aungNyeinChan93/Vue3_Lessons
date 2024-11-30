@@ -2,36 +2,31 @@
 
   <div class="container">
     <div class="bg-red-200 px-2 py-1 my-2 text-black text-center text-2xl rounded-sm">LocalStorage</div>
-      <div class="card p-2 bg-gray-200 rounded shadow my-2">
-          <SubmitForm :form="form" :formSubmit="formSubmit" @createForm="handleEvent" />
-      </div>
-    <p>{{events}}</p>
+    <div class="card p-2 bg-gray-200 rounded shadow my-2">
+      <SubmitForm :form="form" :formSubmit="formSubmit" @createForm="handleEvent"/>
+    </div>
+
   </div>
 
 </template>
 
 <script setup>
 import SubmitForm from "@/components/SubmitForm.vue";
-import {onMounted, reactive, ref} from "vue";
+import { ref, watch} from "vue";
+import {useStorage} from "@/composiables/useStorage.js";
 
 const events = ref([])
-const form = reactive({
-  name:localStorage.getItem('name'),
-  email:localStorage.getItem('email'),
-})
-const formSubmit = (name ,email)=>{
-  localStorage.setItem('name',name);
-  localStorage.setItem('email',email);
-}
+const {form,formSubmit} = useStorage("name", "email");
 
-const handleEvent = (...event)=>{
+const handleEvent = (...event) => {
   events.value.push(...event)
-  console.log(events.value)
 }
 
-onMounted(() => {
-  handleEvent();
+watch(events, (val) => {
+  events.value = val
+
 })
+
 </script>
 
 <style lang="scss" scoped>
