@@ -7,10 +7,7 @@
     <h4>{{user}}</h4>
     <button @click="changeName" class="bg-red-400 p-2 rounded active:bg-red-100  my-2">Change Name</button>
     <button @click="flash('Testing Alert!','success')" class="bg-red-400 p-2 rounded active:bg-red-100 my-2 ">Flash Alert </button>
-
-
   </div>
-
 </template>
 
 

@@ -21,6 +21,11 @@ const router = createRouter({
       path:'/testing',
       name: 'testing',
       component: () => import('v@/TestingView.vue'),
+    },
+    {
+      path:'/localStorage',
+      name: 'localStorage',
+      component: () => import('v@/LocalStorageView.vue'),
     }
   ],
 })
