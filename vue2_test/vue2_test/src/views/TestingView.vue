@@ -6,7 +6,7 @@
       ipsa, laborum molestias nisi provident quae quam sed sint vel, voluptate? Atque error quo similique?</p>
     <h4>{{user}}</h4>
     <button @click="changeName" class="bg-red-400 p-2 rounded active:bg-red-100  my-2">Change Name</button>
-    <button @click="flash('Testing Alert!','success')" class="bg-red-400 p-2 rounded active:bg-red-100 my-2 ">Flash Alert </button>
+    <button @click="successFlash('Testing Alert!','alert body')" class="bg-red-400 p-2 rounded active:bg-red-100 my-2 ">Flash Alert </button>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ import {ref} from "vue";
 import {useFlash} from "@/composiables/useFlash.js";
 
 let user = ref('aung nyein chan');
-const {flash} = useFlash();
+const {successFlash,failFlash} = useFlash();
 
 const changeName = ()=>{
   setTimeout(()=>{
@@ -26,6 +26,3 @@ const changeName = ()=>{
 
 </script>
 
-<style lang="scss" scoped>
-
-</style>

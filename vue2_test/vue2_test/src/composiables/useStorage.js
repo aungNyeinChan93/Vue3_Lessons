@@ -2,21 +2,24 @@ import {reactive, watch} from "vue";
 
 export function useStorage(keyName, keyEmail) {
 
-    const storageVals = {
-        name: localStorage.getItem('keyName'),
-        email: localStorage.getItem('keyEmail'),
-    }
-
-    const form = reactive(storageVals);
-
     const formSubmit = (form) => {
-        localStorage.setItem('name', form.name);
-        localStorage.setItem('email', form.email);
+        if (form.name === null && form.email === null) {
+            localStorage.removeItem(keyName);
+            localStorage.removeItem(keyEmail);
+        } else {
+            localStorage.setItem(keyEmail, JSON.stringify(form.email));
+            localStorage.setItem(keyName, JSON.stringify(form.name));
+        }
     }
+
+    const form = reactive({
+        name: JSON.parse(localStorage.getItem(keyName)),
+        email: JSON.parse(localStorage.getItem(keyEmail)),
+    });
 
     watch(form, () => {
         formSubmit(form)
     })
 
-    return { form ,formSubmit}
+    return {form, formSubmit}
 }

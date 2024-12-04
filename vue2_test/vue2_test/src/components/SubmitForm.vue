@@ -25,8 +25,8 @@ const handleClick = () => {
   emit("createForm", 'createForm emit data', 'test', props.form);
 }
 
-watch(props.form, () => {
-  emit("createForm", 'createForm emit data', 'test', props.form);
+watch(props.form, (val) => {
+  emit("createForm", 'createForm emit data', 'test', val);
 })
 
 </script>

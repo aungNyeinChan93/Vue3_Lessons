@@ -26,6 +26,11 @@ const router = createRouter({
       path:'/localStorage',
       name: 'localStorage',
       component: () => import('v@/LocalStorageView.vue'),
+    },
+    {
+      path:'/propsAndEmit',
+      name:'propsAndEmit',
+      component: () => import('v@/Props&EmitView.vue'),
     }
   ],
 })

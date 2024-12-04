@@ -1,9 +1,12 @@
 import swal from 'sweetalert';
 
 export function useFlash() {
-    const flash = (message ,status)=>{
-        swal(message, "You clicked the button!", status);
+    const successFlash = (title ,body)=>{
+        swal(title,body, "success");
+    }
+    const failFlash  = (title ,body)=>{
+        swal(title,body,"error");
     }
 
-    return {flash};
+    return {successFlash ,failFlash};
 }
