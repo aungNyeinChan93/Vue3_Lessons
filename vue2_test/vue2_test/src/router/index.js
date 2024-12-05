@@ -31,6 +31,11 @@ const router = createRouter({
       path:'/propsAndEmit',
       name:'propsAndEmit',
       component: () => import('v@/Props&EmitView.vue'),
+    },
+    {
+      path:'/dependencyInjection',
+      name:'dependencyInjection',
+      component: () => import('v@/QuizView.vue'),
     }
   ],
 })

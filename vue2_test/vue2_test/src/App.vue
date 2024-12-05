@@ -16,6 +16,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
         <RouterLink :to="{name:'testing'}">Testing</RouterLink>
         <RouterLink :to="{name:'localStorage'}">LocalStorage</RouterLink>
         <RouterLink :to="{name:'propsAndEmit'}">PropsAndEmit</RouterLink>
+        <RouterLink :to="{name:'dependencyInjection'}">DependencyInjection</RouterLink>
       </nav>
     </div>
   </header>
