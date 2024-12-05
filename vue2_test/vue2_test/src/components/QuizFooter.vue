@@ -10,6 +10,6 @@
 <script setup>
 import {inject} from "vue";
 
-const {title,body ,changeName} = inject('quiz')
+const {title,body ,changeName,successFlash,failFlash} = inject('quiz')
 </script>
 
