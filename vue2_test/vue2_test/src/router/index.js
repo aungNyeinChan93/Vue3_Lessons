@@ -36,6 +36,11 @@ const router = createRouter({
       path:'/dependencyInjection',
       name:'dependencyInjection',
       component: () => import('v@/QuizView.vue'),
+    },
+    {
+      path:'/counter',
+      name:'counter',
+      component: () => import('v@/CounterView.vue'),
     }
   ],
 })
